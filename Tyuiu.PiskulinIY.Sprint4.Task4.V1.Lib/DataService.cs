@@ -12,7 +12,7 @@ namespace Tyuiu.PiskulinIY.Sprint4.Task4.V1.Lib
             {
                 for (int j = 0; j < columns; j++) 
                 {
-                    if (matrix[i,j] % 2 != 0)
+                    if (matrix[i,j] % 2 == 0)
                     sum += matrix[i, j];
                 }
             }
