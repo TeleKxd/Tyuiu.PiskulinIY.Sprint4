@@ -5,7 +5,41 @@ namespace Tyuiu.PiskulinIY.Sprint4.Task6.V28
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            DataService ds = new DataService();
+
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Спринт #1                                                               *");
+            Console.WriteLine("* Тема: Организация ввода\\вывода в консольных приложениях                *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #17                                                             *");
+            Console.WriteLine("* Выполнил: Пискулин Игорь Юрьевич | ИСТНб-24-1                           *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
+            Console.WriteLine("* вычисляет результат, и печатает его на экране.                          *");
+            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
+
+            string[] array = { "Река", "Озеро", "Болото", "Океан", "Лужа", "Море" };
+
+            Console.WriteLine("Исходный массив");
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+            }
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
+            Console.WriteLine("***************************************************************************");
+
+            string[] res = ds.Calculate(array);
+            foreach (string word in res)
+            {
+                Console.Write(word + "\t");
+            }
+            Console.ReadKey();
+            
         }
     }
 }
